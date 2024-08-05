@@ -1,0 +1,70 @@
+/* Main.css */
+
+.container {
+    max-width: 91%; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+    padding-bottom: 5%;
+  }
+  
+  /* Estilo para el título */
+  .title {
+    margin-bottom: 20px; 
+    font-size: 24px; 
+    font-weight: 600;
+    color: #333; 
+  }
+  
+  /* Estilo para la sección de búsqueda y agregar usuario */
+  .search-addClient {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+  }
+  
+
+
+.search-addClient .left-side {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.search-addClient .left-side .ant-btn {
+  margin-right: 10px;
+  width: 150px; 
+}
+
+.search-addClient .right-side {
+  display: flex;
+  align-items: center;
+}
+
+  
+  
+  
+  .search-addClient .right-side .ant-btn:hover {
+    background-color: #45a049; 
+    border-color: #45a049
+  }
+  
+/* Estilo para la tabla */
+.table {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.124); 
+}
+  
+ 
+  .ant-btn {
+    border-radius: 4px;
+  }
+  
+  .ant-select {
+    border-radius: 4px; 
+  }
+  
+  
+  
+  
+  
+  

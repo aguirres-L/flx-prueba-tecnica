@@ -5,6 +5,7 @@
 
 function reverseString(str) {
   // Tu solución acá  
+  return str.split('').reverse().join('');
 }
 
 /*
@@ -14,6 +15,8 @@ function reverseString(str) {
 */
 function isPalindrome(str) {
   // Tu solución acá
+    let reverse = str.split('').reverse().join('');
+    return str === reverse;
 }
 
 /*
@@ -31,6 +34,23 @@ function isPalindrome(str) {
 
 function closestPair(arr) {
   // Tu solución acá
+  if(arr.length < 2) return ;
+  
+  arr.sort((a,b)=> a-b); // orden array
+  
+  let minDiff = Infinity; // num infi
+  let par = [];
+  
+  // buscar par con diferencia mini
+  for ( let i = 0; i < arr.length -1; i++){
+    let diff = arr[ i+1 ] - arr[i];
+    if( diff < minDiff){
+      minDiff = diff;
+      par = [arr[i], arr[i+1]];
+    }
+  }
+  return par;
+  
 }
 
 
@@ -45,7 +65,8 @@ function closestPair(arr) {
   - add(a, b): Este método toma dos números como argumentos y devuelve la suma de los mismos. 
     Además, actualiza el último resultado calculado.
 
-  - subtract(a, b): Este método toma dos números como argumentos y devuelve la resta del primero menos el segundo. 
+  - subtract(a, b): Este método toma dos números como argumentos y devuelve la
+  resta del primero menos el segundo. 
     Además, actualiza el último resultado calculado.
 
   - multiply(a, b): Este método toma dos números como argumentos y devuelve el producto de los mismos. 
@@ -68,7 +89,44 @@ function closestPair(arr) {
 
 class Calculator {
   // Tu solución acá
+  constructor(){this.lastResult= null};
+  
+  add( a,b ){
+    this.lastResult= a +b ;
+    return this.lastResult;
+  }
+  
+  subtract( a,b ){
+    this.lastResult= a-b;
+    return this.lastResult;
+  }
+  
+  multiply( a,b){
+    this.lastResult= a*b;
+    return this.lastResult;
+     
+  }
+  
+  divide(a, b) {
+    if (b === 0) throw new Error('Division by zero is not allowed');
+    
+    this.lastResult = a / b;
+    return this.lastResult;
+  }
+  
+  exponentiate(base, exponent) {
+    if(exponent < 0 ) {
+      throw new Error ('Exponentiation with negative exponent is not allowed')
+    }
+    
+    this.lastResult = Math.pow(base, exponent);
+    return this.lastResult;
+  }
+  getLastResult(){
+    return this.lastResult;
+  }
 }
+
 
 module.exports = {
   closestPair,

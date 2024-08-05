@@ -1,24 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
-      "username": "user1",
-      "name": "John",
-      "lastname": "Doe",
-      "email": "john.doe@example.com",
-      "status": "active",
-      "age": 30
-    },
-    {
-      "id": 2,
-      "username": "user2",
-      "name": "Jane",
-      "lastname": "Smith",
-      "email": "jane.smith@example.com",
-      "status": "inactive",
-      "age": 25
-    },
-    {
+      "key": 3,
       "id": 3,
       "username": "user3",
       "name": "Michael",
@@ -37,12 +20,13 @@
       "age": 28
     },
     {
+      "key": 5,
       "id": 5,
       "username": "user5",
       "name": "William",
       "lastname": "Wilson",
       "email": "william.wilson@example.com",
-      "status": "inactive",
+      "status": "active",
       "age": 40
     },
     {
@@ -53,15 +37,6 @@
       "email": "olivia.jones@example.com",
       "status": "active",
       "age": 32
-    },
-    {
-      "id": 7,
-      "username": "user7",
-      "name": "James",
-      "lastname": "Taylor",
-      "email": "james.taylor@example.com",
-      "status": "inactive",
-      "age": 45
     },
     {
       "id": 8,
@@ -80,24 +55,6 @@
       "email": "alexander.hernandez@example.com",
       "status": "active",
       "age": 33
-    },
-    {
-      "id": 10,
-      "username": "user10",
-      "name": "Charlotte",
-      "lastname": "Garcia",
-      "email": "charlotte.garcia@example.com",
-      "status": "inactive",
-      "age": 29
-    },
-    {
-      "id": 11,
-      "username": "user11",
-      "name": "Benjamin",
-      "lastname": "Lopez",
-      "email": "benjamin.lopez@example.com",
-      "status": "active",
-      "age": 38
     },
     {
       "id": 12,
@@ -449,6 +406,24 @@
       "email": "grace.allen@example.com",
       "status": "active",
       "age": 32
+    },
+    {
+      "username": "asd",
+      "email": "asd@gmail.com",
+      "name": "asd",
+      "lastname": "asd",
+      "status": "active",
+      "age": "11",
+      "id": 51
+    },
+    {
+      "username": "Enoc",
+      "email": "aguirres9797@gmail.com",
+      "name": "Agustin",
+      "lastname": "Aguirres",
+      "status": "inactive",
+      "age": "1997",
+      "id": 52
     }
   ]
 }
